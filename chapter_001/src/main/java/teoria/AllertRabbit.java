@@ -18,7 +18,7 @@ public class AllertRabbit {
             //Конструкция  настраивает периодичность запуска. В нашем случае,
             // мы будем запускать задачу через 10 секунд и делать это бесконечно.
             SimpleScheduleBuilder times = simpleSchedule()
-                    .withIntervalInSeconds(10)
+                    .withIntervalInSeconds(9)
                     .repeatForever();
 
             // Задача выполняется через триггер.Здесь можно указать,
