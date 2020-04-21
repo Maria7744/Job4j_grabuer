@@ -55,7 +55,7 @@ public class UploadCreat {
         }
     }
 
-        public void upload(List< NodeBase > exm) {
+        public void upload(List<Vacancy> exm) {
         try (PreparedStatement pst = connection.prepareStatement("insert into sqltable (names, alltext, links) "
                 + "values (?,?,?) on conflict "
                 + "(names) do update set alltext = ?, links = "
